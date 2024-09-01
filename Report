@@ -9,7 +9,7 @@ The 2-bit binary adder consists of two half adder circuits connected in series. 
 -	B1, B0 (second 2-bit number)
 	Outputs: Sum1, Sum0, Carry out
 2.2 SCHEMATIC DIAGRAM
- ![Schematic Diagram](C:\Users\USER\Downloads/pic1.jpeg)
+ 
 
  
 
