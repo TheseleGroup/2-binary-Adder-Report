@@ -1,0 +1,72 @@
+OBJECTIVE
+The objective of this project was to design, simulate, and test a 2-bit binary adder circuit. A 2-bit binary adder is a digital circuit used to add two binary numbers. The goal was to ensure the circuit correctly computes the sum and the carry for all possible input combinations.
+
+
+2. CIRCUIT DESIGN 
+2.1 SCHEMATIC OVERVIEW
+The 2-bit binary adder consists of two half adder circuits connected in series. Each half adder is responsible for adding the corresponding bits of the input numbers and the carry from the initial adder.
+	Inputs: A1, A0 ( first 2-bit number)
+-	B1, B0 (second 2-bit number)
+	Outputs: Sum1, Sum0, Carry out
+2.2 SCHEMATIC DIAGRAM
+ ![Schematic Diagram](C:\Users\USER\Downloads/pic1.jpeg)
+
+ 
+
+
+The circuit consists of:
+	Two Half adders
+	Logic Gates: AND, OR and XOR gates that are used to implement the full adder logic.
+
+Each half adder takes two input bits and carry-in bit, producing a sum and a carry-out bit. The carry-out from the first half adder serves as the carry-in for the second full adder.
+
+3. SIMULATION PROCESS
+3.1 SIMULATION ENVIRONMENT 
+The circuit was simulated using Digital Works. The tool provides a digital circuit simulation environment, allowing verification of the functionality of the design before hardware implementation.
+
+
+3.2 SIMULATION SETUP
+•	Step 1: The 2-bits binary adder circuit was constructed using the schematic diagram provided.
+•	Step 2: All 16 input combinations (00,01,10,11) were applied to the circuit.
+•	Step 3: The output was observed and compared with expected results.
+
+3.3 SIMULATION RESULTS
+Test Case 1: A = 00, B = 00
+-	Expected Output: Sum = 00, Carry = 0
+-	Simulation Output: 
+Result: PASSED
+Test Case 2: A = 01, B = 01
+-	Expected Output: Sum = 10, Carry = 0
+-	Simulation output:  
+     RESULT: PASSED
+     Test Case 3: A = 10, B=10
+-	Expected output: Sum = 00, Carry = 1 
+-	Simulation Output: 
+RESULT: PASSED
+   Test Case 4: A=11, B=11
+-	Expected Output: Sum=10, Carry = 1
+-	Simulation Output: 
+RESULT: PASSED
+
+4. TESTING STRATEGY
+4.1 TEST CASES
+The testing strategy focused on validating the correctness of the adder’s output for all possible input combinations. The following test cases were applied:
+1.	A = 00, B = 00
+Expected Output: Sum = 00, Carry = 0
+
+2.	A = 01, B = 01
+Expected Output: Sum = 10, Carry = 0
+
+3.	A = 10, B = 10
+Expected Output: Sum = 00, Carry = 1
+
+4.	A = 11, B = 11
+Expected Output: Sum = 10, Carry = 1
+
+
+4.2	TESTING RESULTS
+   Each test case was verified against the expected the expected outcome. The circuit passed all test cases successfully, confirming its correctness.
+
+5.	CONCLUSION
+
+The design and testing of the 2 – bit binary adder were successfully completed. The circuit performed correctly for all input combinations, and the simulation results matched the expected outcomes. The challenges encountered during the simulation, such as timing issues and carry propagation were effectively resolved. The project demonstrates a thorough understanding of digital circuit design and simulation.
